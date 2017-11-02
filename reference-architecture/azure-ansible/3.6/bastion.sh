@@ -319,24 +319,16 @@ openshift_logging_curator_ops_nodeselector={"role":"infra"}
 
 [masters]
 master1 openshift_hostname=master1 openshift_node_labels="{'role': 'master'}"
-master2 openshift_hostname=master2 openshift_node_labels="{'role': 'master'}"
-master3 openshift_hostname=master3 openshift_node_labels="{'role': 'master'}"
 
 [etcd]
 master1
-master2
-master3
 
 [new_nodes]
 [new_masters]
 
 [nodes]
 master1 openshift_hostname=master1 openshift_node_labels="{'role':'master','zone':'default','logging':'true'}" openshift_schedulable=false
-master2 openshift_hostname=master2 openshift_node_labels="{'role':'master','zone':'default','logging':'true'}" openshift_schedulable=false
-master3 openshift_hostname=master3 openshift_node_labels="{'role':'master','zone':'default','logging':'true'}" openshift_schedulable=false
 infranode1 openshift_hostname=infranode1 openshift_node_labels="{'role': 'infra', 'zone': 'default','logging':'true'}"
-infranode2 openshift_hostname=infranode2 openshift_node_labels="{'role': 'infra', 'zone': 'default','logging':'true'}"
-infranode3 openshift_hostname=infranode3 openshift_node_labels="{'role': 'infra', 'zone': 'default','logging':'true'}"
 EOF
 
 # Loop to add Nodes
